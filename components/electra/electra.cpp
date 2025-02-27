@@ -17,7 +17,7 @@ namespace esphome {
             ESP_LOGD(TAG, "on state callback: %i", state);
 
                 if (state) {
-                    this->mode = this->active_mode_;
+                    this->mode = active_mode_;
                 } else {
                     this->mode = climate::CLIMATE_MODE_OFF;
                 }
